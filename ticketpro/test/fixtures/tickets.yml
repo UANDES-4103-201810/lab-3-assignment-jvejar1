@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  event: one
+  type_of_ticket: MyString
+  price: 1
+  description: MyText
+
+two:
+  event: two
+  type_of_ticket: MyString
+  price: 1
+  description: MyText
