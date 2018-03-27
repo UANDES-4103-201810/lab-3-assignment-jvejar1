@@ -6,8 +6,10 @@ class User < ApplicationRecord
     return self.tickets.max_by(&:price)
   end
 
-  def most_expensive_ticket_bought_between
-    
+  def most_expensive_ticket_bought_between(start_date,end_date)
+
+    return self.tickets.where(:date_bought=>start_date..end_date).max_by(&:price)
+
   end
 end
 
